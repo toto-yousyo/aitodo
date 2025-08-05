@@ -67,4 +67,7 @@ const SimpleTodoApp = () => {
 
     setTodos((prev) => [...prev, ...selectedImprovements]);
   };
+
+  const completedCount = todos.filter((todo) => todo.completed).length;
+  const totalCount = todos.length;
 };
